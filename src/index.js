@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-axios.defaults.baseURL= "https://bharath-color-themings.onrender.com"
+// axios.defaults.baseURL= "https://bharath-color-themings.onrender.com"
 
 root.render(
   <React.StrictMode>

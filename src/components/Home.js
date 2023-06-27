@@ -17,7 +17,7 @@ export default function Home({onLogout}) {
   },[]);
   const getColor = async () => {
     axios
-      .get(`/api/v1/auth/preferences/${userId}`)
+      .get(`https://bharath-color-theming.onrender.com/api/v1/auth/preferences/${userId}`)
       .then((res) => {
       
         if (res.data.success) {
@@ -42,7 +42,7 @@ export default function Home({onLogout}) {
 
   const colorUpdate = async (data) => {
 
-    await axios.post(`/api/v1/auth/preferences`, {
+    await axios.post(`https://bharath-color-theming.onrender.com/api/v1/auth/preferences`, {
       userId,
       theme: data?.name,
     });

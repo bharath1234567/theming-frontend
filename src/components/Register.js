@@ -21,7 +21,7 @@ const Login = () => {
     event.preventDefault();
     try{
 
-        const  res = await axios.post('/api/v1/auth/register',register)
+        const  res = await axios.post('https://bharath-color-theming.onrender.com/api/v1/auth/register',register)
        
         if(res.data.status){
             navigate('/login')

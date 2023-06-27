@@ -23,7 +23,7 @@ const Login = ({ isAuthenticated, onLogin }) => {
     event.preventDefault();
     try{
 
-      const  res = await axios.post('/api/v1/auth/login',{email:username,password})
+      const  res = await axios.post('https://bharath-color-theming.onrender.com/api/v1/auth/login',{email:username,password})
     
         if(res.data.status){
             sessionStorage.setItem('user',res.data.user.email)
